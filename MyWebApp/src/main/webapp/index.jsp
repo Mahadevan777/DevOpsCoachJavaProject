@@ -41,11 +41,9 @@
 </head>
 <body>
 
-    <h1>Hi Mahadev! Congratulations on building and deploying your Java WebApp to Microsoft Azure App Services!</h1>
-
-    <h2>We are migrating Java WebApp from GitHub to Azure Cloud using Azure Pipelines.</h2>
-
-    <h2>Azure DevOps is a platform with five different components!</h2>
+    <h1>Hye,"Hi Mahadev! Congratulations on building and deploying your Java WebApp to Microsoft Azure App Services!"</h1>
+     <h2>"Embrace curiosity, stay hungry for knowledge; in the pursuit of wisdom, allow yourself the freedom to stay foolish and explore the unknown."</h2>
+    <h1> "Stay hungry, stay foolish, chase your dream" </h1>
 
 </body>
 </html>
