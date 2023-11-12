@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java WebApp Deployment</title>
+    <title>Diwali Celebration</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(45deg, #3498db, #e74c3c, #2ecc71, #f39c12);
-            background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
+            background: #000;
+            overflow: hidden;
             color: #fff;
             text-align: center;
+        }
+
+        .firework {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background-color: #f39c12;
+            border-radius: 50%;
+            animation: explode 1s linear infinite;
         }
 
         h1 {
@@ -26,25 +34,28 @@
             font-size: 1.8em;
         }
 
-        @keyframes gradient {
+        @keyframes explode {
             0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
+                transform: scale(1);
+                opacity: 1;
             }
             100% {
-                background-position: 0% 50%;
+                transform: scale(2);
+                opacity: 0;
             }
         }
     </style>
 </head>
 <body>
+    <!-- Firework animation -->
+    <div class="firework" style="top: 50%; left: 50%;"></div>
+    <div class="firework" style="top: 20%; left: 80%;"></div>
+    <div class="firework" style="top: 80%; left: 30%;"></div>
+    <!-- Add more fireworks as needed -->
 
-    <h1>Hye,"Hi Mahadev! Congratulations on building and deploying your Java WebApp to Microsoft Azure App Services!"</h1>
-     <h2>"Embrace curiosity, stay hungry for knowledge; in the pursuit of wisdom, allow yourself the freedom to stay foolish and explore the unknown."</h2>
-    <h2> "Stay hungry, stay foolish, Chase Your Dream" </h2>
+    <h1>Let the lights of Diwali guide you through the darkness and bring you closer to your dreams. Wishing You All Happy Diwali,🎇</h1>
+    <h2>"Embrace the light within you, and let it shine bright. May this Diwali bring joy, prosperity, and success to your life."</h2>
+    <h2> "Stay blessed, stay positive, and continue to spread the light of happiness. Happy Diwali!" </h2>
 
 </body>
 </html>
-
