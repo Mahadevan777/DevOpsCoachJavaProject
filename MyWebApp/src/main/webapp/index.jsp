@@ -41,7 +41,7 @@
 </head>
 <body>
 
-    <h1>Congratulations Mahadev, on building and deploying your Java WebApp to Microsoft Azure App Services throught Azure DevOps!"</h1>
+    <h1>Wow! Congratulation Mahadev, on building and deploying your Java WebApp to Microsoft Azure App Services, throught Azure DevOps!"</h1>
       <h2>Let the lights of Diwali guide you through the darkness and bring you closer to your dreams."</h2>
     <h2> "Stay blessed, stay positive, and continue to spread the light of happiness. Happy Diwali! to All" </h2>
     
