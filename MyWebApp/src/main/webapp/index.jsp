@@ -42,8 +42,8 @@
 <body>
 
     <h1>Hye,"Hi Mahadev! Congratulations on building and deploying your Java WebApp to Microsoft Azure App Services!"</h1>
-     <h2>"Embrace curiosity, stay hungry for knowledge; in the pursuit of wisdom, allow yourself the freedom to stay foolish and explore the unknown."</h2>
-    <h1> "Stay hungry, stay foolish, chase your dream" </h1>
+     <h2>"Embrace curiosity, stay hungry for knowledge; in the pursuit of wisdom, \n allow yourself the freedom to stay foolish and explore the unknown."</h2>
+    <h2> "Stay hungry, stay foolish, chase your dream" </h2>
 
 </body>
 </html>
