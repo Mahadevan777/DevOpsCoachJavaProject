@@ -1,18 +1,3 @@
-<%–
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Some relevant title</title>
-</head>
-<body>
-	<h1>Hi Mahadev This is You web app you successfully built and deployed it to the Microsoft Azure app services Congratulation</h1>
-	<h2>We are migrating Java WebApp from from GitHub into Azure Cloud by building Azure pipeline!!!</h2>
-	  <h2>Azure DevOps is a platform which has five different components !!!</h2>
-
-</body>
-</html>
--%>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
