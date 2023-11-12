@@ -3,8 +3,8 @@ trigger:
 
 variables:
   azureSubscription: '845ecbf0-c8cb-4571-9680-64cedc7b7dbe'
-  webAppName: 'MahadevWebApp'
-  environmentName: 'MahadevWebApp'
+  webAppName: 'MahadevWebApp2'
+  environmentName: 'MahadevWebApp2'
   vmImageName: 'ubuntu-latest'
 
 stages:
@@ -48,7 +48,7 @@ stages:
         deploy:
           steps:
           - task: AzureWebApp@1
-            displayName: 'Azure Web App Deploy: MahadevWebApp'
+            displayName: 'Azure Web App Deploy: MahadevWebApp2'
             inputs:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
