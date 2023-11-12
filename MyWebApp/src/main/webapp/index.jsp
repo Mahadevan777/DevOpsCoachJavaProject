@@ -41,11 +41,10 @@
 </head>
 <body>
 
-    <h1>Hye,"Hi Mahadev! Congratulations on building and deploying your Java WebApp to Microsoft Azure App Services!"</h1>
-      <h2>"Embrace the light within you, and let it shine bright. May this Diwali bring joy, prosperity, and success to your life."</h2>
+    <h1>Congratulations on building and deploying your Java WebApp to Microsoft Azure App Services!"</h1>
+      <h2>Let the lights of Diwali guide you through the darkness and bring you closer to your dreams."</h2>
     <h2> "Stay blessed, stay positive, and continue to spread the light of happiness. Happy Diwali!" </h2>
-     <h2>"Embrace curiosity, stay hungry for knowledge; in the pursuit of wisdom, allow yourself the freedom to stay foolish and explore the unknown."</h2>
-    <h2> "Stay hungry, stay foolish, Chase Your Dream" </h2>
+    
 
 </body>
 </html>
