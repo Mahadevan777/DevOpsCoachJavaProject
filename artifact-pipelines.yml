@@ -1,0 +1,56 @@
+trigger:
+- main
+
+variables:
+  azureSubscription: '845ecbf0-c8cb-4571-9680-64cedc7b7dbe'
+  webAppName: 'MahadevWebApp'
+  environmentName: 'MahadevWebApp'
+  vmImageName: 'ubuntu-latest'
+
+stages:
+- stage: Build
+  displayName: 'Build stage'
+  jobs:
+  - job: MavenPackageAndPublishArtifacts
+    displayName: 'Maven Package and Publish Artifacts'
+    pool:
+      vmImage: $(vmImageName)
+
+    steps:
+    - task: Maven@3
+      displayName: 'Maven Package'
+      inputs:
+        mavenPomFile: 'MyWebApp/pom.xml'
+
+    - task: CopyFiles@2
+      displayName: 'Copy Files to Artifact Staging Directory'
+      inputs:
+        SourceFolder: '$(System.DefaultWorkingDirectory)'
+        Contents: '**/target/*.?(war|jar)'
+        TargetFolder: $(Build.ArtifactStagingDirectory)
+
+    - publish: $(Build.ArtifactStagingDirectory)
+      artifact: MyWebAppArtifact
+      displayName: 'Publish Artifact'
+
+- stage: Deploy
+  displayName: 'Deploy stage'
+  dependsOn: Build
+  condition: succeeded()
+  jobs:
+  - deployment: DeployLinuxWebApp
+    displayName: 'Deploy Linux Web App'
+    environment: $(environmentName)
+    pool:
+      vmImage: $(vmImageName)
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: AzureWebApp@1
+            displayName: 'Azure Web App Deploy: MahadevWebApp'
+            inputs:
+              azureSubscription: $(azureSubscription)
+              appType: webAppLinux
+              appName: $(webAppName)
+              package: '$(Pipeline.Workspace)/drop/MyWebAppArtifact/**/*.?(war|jar)'
